@@ -1,0 +1,14 @@
+# Question 1: Accept two integer numbers from a user and return their product,
+# if the product is greater than 1000, then return their sum
+
+def cal(x,y):
+    if x*y>1000:
+        return x+y
+    else:
+        return x*y
+
+x = int(input('enter the first number'))
+y = int(input('enter the second number'))
+
+result = cal(x,y)
+print('the result is', result)

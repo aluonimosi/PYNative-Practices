@@ -1,0 +1,14 @@
+# Question 2: Given a range of first n numbers,
+# Iterate from start number to the end number and
+# print the sum of the current number and previous number
+
+def cal(num):
+    previous = 0
+    for i in range(num):
+        sum_num = previous + i
+        print('Current number is', i, 'Previous number is',previous, 'sum is', sum_num)
+        previous = i
+
+num = int(input('enter how many numbers you want to see'))
+print("Printing current and previous number sum in a given range of first ", num, "integers")
+cal(num)

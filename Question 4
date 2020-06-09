@@ -1,0 +1,22 @@
+#Question 4: Given a string and an integer number n,
+# remove characters from a string starting from zero up to n and return a new string
+
+def stringremover(str,n):
+    lst = list()
+
+    try:
+        n = float(n)
+    except:
+        print('please enter a number')
+    try:
+        len(str)>n
+    except:
+        print('enter a longer word or a smaller number')
+    start = len(str)-n
+    for i in range(0,len(str)):
+        if i < start:
+            continue
+        print(str[i])
+
+str = input('enter a word')
+stringremover(str,5)

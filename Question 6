@@ -1,0 +1,10 @@
+# Question 6: Given a list of numbers, Iterate it and print only those numbers which are divisible of 5
+
+def num_finder(num):
+    print('given list is ', num)
+    for i in num:
+        if i%5 == 0:
+            print (int(i))
+
+num = [1,2,3,4,5,6,7,8,9,10]
+num_finder(num)

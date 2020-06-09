@@ -1,0 +1,14 @@
+# Question 5: Given a list of numbers, return True if first and last number of a list is same
+
+def listcheck(lst):
+    print('given list is', lst)
+
+    if lst[0] == lst[-1]:
+        return True
+    else:
+        return False
+
+lst = input('enter a list')
+
+
+print('result is',listcheck(lst))

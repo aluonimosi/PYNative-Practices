@@ -1,0 +1,11 @@
+# Question 9: Reverse a given number and return true if it is the same as the original number
+
+number = 123456
+reversenum = 0
+
+while number > 0:
+    reversenum = number%10+reversenum*10
+    number = number //10
+
+
+print(reversenum)
